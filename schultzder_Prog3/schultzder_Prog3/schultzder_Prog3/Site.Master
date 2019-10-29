@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="schultzder_Prog3.SiteMaster" Debug="true" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	CS 3870/CS 5870 - Prog3
+</title><link href="../StyleSheet.css" rel="StyleSheet1" type="text/css" />
+
+    <style type="text/css">
+        .auto-style2 {
+            text-align: center;
+            color: #0000FF;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1">
+    <div>
+            <h1 class="auto-style2">Web Protocols, Technologies and Applications </h1>
+    <h2 class="auto-style2">Derek Schultz</h2>
+
+        
+<ul class="navbar">
+            <li> <a href="Default.aspx"> All Products </a></li>
+            <li> <a href="UpdateProduct.aspx"> Updating Products </a></li>
+            <li> <a href="Shop.aspx"> Shopping </a></li>
+</ul>
+
+        
+    <br /> <br />
+
+<div>
+	<div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+</div>
+    </div>
+    </form>
+</body>
+</html>
